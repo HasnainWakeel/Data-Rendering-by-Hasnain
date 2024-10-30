@@ -1,0 +1,149 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    
+}
+
+#main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#modal-parent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.872);
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.modal-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-head button {
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.modal-head button:hover {
+    background-color: #e84118;
+}
+
+.user-div {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #c79595;
+    border-radius: 5px;
+    width: 80%;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.user-div:hover {
+    background-color: #e3e2e2;
+    font-size: 22px;
+    transition: font-size 0.5s;
+}
+
+.modal-body {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff4757;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.heading:hover {
+    font-size: 33px;
+    transition: font-size 0.3s;
+}
+
+@media screen and (min-width: 2560px) {
+    body{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .heading {
+        font-size: 60px;
+    }
+    
+    .heading:hover {
+        font-size: 63px;
+        transition: font-size 0.3s;
+    }
+
+    
+    #modal-parent {
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #modal {
+        border-radius: 12px;
+        width: 100%;
+        height: 50%;
+        font-size: 35px;
+    }
+    
+    
+    .modal-head button {
+        border-radius: 10px;
+        font-size: 36px;
+    }
+    
+    .modal-head button:hover {
+        background-color: #e84118;
+    }
+    
+    .user-div {
+        border: 1px solid #c79595;
+        border-radius: 10px;
+        width: 70%;
+        font-size: 35px;
+    }
+    
+    .user-div:hover {
+        font-size: 40px;
+    }
+    
+}
