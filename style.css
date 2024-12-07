@@ -49,9 +49,11 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    transition: background-color 0.3s;
 }
 
 .modal-head button:hover {
+    transition: background-color 0.3s;
     background-color: #e84118;
 }
 
@@ -64,6 +66,7 @@ body {
     background-color: white;
     cursor: pointer;
     transition: background-color 0.5s;
+    transition: font-size 0.5s;
 }
 
 .user-div:hover {
@@ -85,11 +88,12 @@ body {
     color: #ff4757;
     cursor: pointer;
     font-size: 30px;
+    transition: font-size 0.4s;
 }
 
 .heading:hover {
-    font-size: 33px;
-    transition: font-size 0.3s;
+    font-size: 35px;
+    transition: font-size 0.4s;
 }
 
 @media screen and (min-width: 2560px) {
